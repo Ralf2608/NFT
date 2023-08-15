@@ -1,0 +1,165 @@
+body {
+    font-size: 22px;
+}
+
+.box1 {
+    background: #0d1a2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box2 {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #15273f;
+    width: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px 25px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}  
+
+.equilibrium {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00FFF8;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.test {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text h1 {
+    color: #f1f9ff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text p {
+    color: #647899;
+}
+
+.text h1:hover {
+    color: #00FFF8;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.side {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon p {
+    margin-left: 5px;
+    color: #00FFF8;
+}
+
+.time {
+    display: flex;
+}
+
+.time p {
+    margin-left: 5px;
+    color: #8BACD9;
+}
+
+.bar {
+    width: 100%;
+    height: 1px;
+    background: #8BACD9;
+    content: " ";
+}
+
+.creation {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.avatar {
+    width: 40px;
+    border: 1px white solid;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.credits {
+    color: #647899;
+    font-size: 0.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits a {
+    text-decoration: none;
+    color: #f1f9ff;
+}
+
+.credits a:hover {
+    color: #00FFF8;
+    transition: .5s ease;
+}
+
+.attribution {
+    color: #f1f9ff;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .box2 {
+        width: 340px;
+    }
+}
